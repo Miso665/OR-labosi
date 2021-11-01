@@ -1,0 +1,36 @@
+Model,Proizvođač,Veličina motora u l,Broj brzina,Vrsta pogona,Težina u kg,Duljina u mm,Širina u mm,Razmak između kotača u mm,Broj pobjeda,Vozači
+C3 WRC,Citroen,1.60,6,sva četiri,1190,4128,1875,2540,6,Sebastien Loeb
+C3 WRC,Citroen,1.60,6,sva četiri,1190,4128,1875,2540,6,Kris Meeke
+Fiesta WRC,Ford,1.59,6,sva četiri,1190,4130,1875,2493,9,Sebastien Ogier
+Fiesta WRC,Ford,1.59,6,sva četiri,1190,4130,1875,2493,9,Ott Tanak
+Fiesta WRC,Ford,1.59,6,sva četiri,1190,4130,1875,2493,9,Elfyn Evans
+i20 Coupe WRC,Hyundai,1.59,6,sva četiri,1190,4100,1875,2570,17,Sebastien Ogier
+i20 Coupe WRC,Hyundai,1.59,6,sva četiri,1190,4100,1875,2570,17,Thierry Neuville
+i20 Coupe WRC,Hyundai,1.59,6,sva četiri,1190,4100,1875,2570,17,Ott Tanak
+i20 Coupe WRC,Hyundai,1.59,6,sva četiri,1190,4100,1875,2570,17,Dani Sordo
+John Cooper Works WRC,Mini,1.60,6,sva četiri,1200,4110,1820,2480,7,Valeriy Gorban
+John Cooper Works WRC,Mini,1.60,6,sva četiri,1200,4110,1820,2480,7,Dani Sordo
+John Cooper Works WRC,Mini,1.60,6,sva četiri,1200,4110,1820,2480,7,Kris Meeke
+Lancer Evolution WRC,Mitsubishi,2.00,5,sva četiri,1230,4360,1800,2600,2,Tommi Makinen
+Lancer Evolution WRC,Mitsubishi,2.00,5,sva četiri,1230,4360,1800,2600,2,Alister McRae
+307 WRC,Peugeot,1.99,5,sva četiri,1230,4344,1770,2610,3,Nicolas Bernardi
+307 WRC,Peugeot,1.99,5,sva četiri,1230,4344,1770,2610,3,Daniel Carlsson
+Cordoba WRC,Seat,1.99,6,sva četiri,1230,4172,1770,2443,0,Didier Auriol
+Cordoba WRC,Seat,1.99,6,sva četiri,1230,4172,1770,2443,0,Gwyndaf Evans
+Fabia WRC,Škoda,1.98,6,sva četiri,1230,4002,1770,2462,0,Didier Auriol
+Fabia WRC,Škoda,1.98,6,sva četiri,1230,4002,1770,2462,0,Alexandre Bengue
+Fabia WRC,Škoda,1.98,6,sva četiri,1230,4002,1770,2462,0,Kenneth Eriksson
+Impreza WRC,Subaru,1.99,6,sva četiri,1230,4340,1770,2635,46,Toshiro Arai
+Impreza WRC,Subaru,1.99,6,sva četiri,1230,4340,1770,2635,46,Chris Atkinson
+Impreza WRC,Subaru,1.99,6,sva četiri,1230,4340,1770,2635,46,Kenneth Eriksson
+Impreza WRC,Subaru,1.99,6,sva četiri,1230,4340,1770,2635,46,Tommi Makinen
+SX4 WRC,Suzuki,1.99,5,sva četiri,1230,4135,1770,2550,0,Per-Gunnar Andersson
+SX4 WRC,Suzuki,1.99,5,sva četiri,1230,4135,1770,2550,0,Nicolas Bernardi
+Yaris WRC,Toyota,1.60,6,sva četiri,1190,4085,1875,2511,25,Ott Tanak
+Yaris WRC,Toyota,1.60,6,sva četiri,1190,4085,1875,2511,25,Jari-Matti Latvala
+Yaris WRC,Toyota,1.60,6,sva četiri,1190,4085,1875,2511,25,Elfyn Evans
+Yaris WRC,Toyota,1.60,6,sva četiri,1190,4085,1875,2511,25,Sebastien Ogier
+Polo R WRC,Volkswagen,1.60,6,sva četiri,1200,3976,1820,2480,43,Julien Ingrassia
+Polo R WRC,Volkswagen,1.60,6,sva četiri,1200,3976,1820,2480,43,Sebastien Ogier
+Polo R WRC,Volkswagen,1.60,6,sva četiri,1200,3976,1820,2480,43,Jari-Matti Latvala
+Polo R WRC,Volkswagen,1.60,6,sva četiri,1200,3976,1820,2480,43,Andreas Mikkelsen
