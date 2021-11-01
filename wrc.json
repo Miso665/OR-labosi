@@ -1,0 +1,276 @@
+[
+    {
+        "Model":"C3 WRC",
+        "Proizvođač":"Citroen",
+        "Veličina motora u l":1.60,
+        "Broj brzina":6,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1190,
+        "Duljina u mm":4128,
+        "Širina u mm":1875,
+        "Razmak između kotača u mm":2540,
+        "Broj pobjeda":6,
+        "Vozači":[
+            {
+                "Ime":"Sebastien", "Prezime":"Loeb"
+            },
+            {
+               "Ime":"Kris", "Prezime":"Meeke" 
+            }
+        ]
+    },
+    {
+        "Model":"Fiesta WRC",
+        "Proizvođač":"Ford",
+        "Veličina motora u l":1.59,
+        "Broj brzina":6,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1190,
+        "Duljina u mm":4130,
+        "Širina u mm":1875,
+        "Razmak između kotača u mm":2493,
+        "Broj pobjeda":9,
+        "Vozači":[
+            {
+                "Ime":"Sebastien", "Prezime":"Ogier"
+            },
+            {
+                "Ime":"Ott", "Prezime":"Tanak" 
+            },
+            {
+                "Ime":"Elfyn", "Prezime":"Evans"
+            }
+        ]
+    },
+    {
+        "Model":"i20 Coupe WRC",
+        "Proizvođač":"Hyundai",
+        "Veličina motora u l":1.59,
+        "Broj brzina":6,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1190,
+        "Duljina u mm":4100,
+        "Širina u mm":1875,
+        "Razmak između kotača u mm":2570,
+        "Broj pobjeda":17,
+        "Vozači":[
+            {
+                "Ime":"Sebastien", "Prezime":"Ogier"
+            },
+            {
+                "Ime":"Thierry", "Prezime":"Neuville" 
+            },
+            {
+                "Ime":"Ott", "Prezime":"Tanak"
+            },
+            {
+                "Ime":"Dani", "Prezime":"Sordo"
+            }
+        ]
+    },
+    {
+        "Model":"John Cooper Works WRC",
+        "Proizvođač":"Mini",
+        "Veličina motora u l":1.60,
+        "Broj brzina":6,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1200,
+        "Duljina u mm":4110,
+        "Širina u mm":1820,
+        "Razmak između kotača u mm":2480,
+        "Broj pobjeda":7,
+        "Vozači":[
+            {
+                "Ime":"Valeriy", "Prezime":"Gorban"
+            },
+            {
+                "Ime":"Dani", "Prezime":"Sordo" 
+            },
+            {
+                "Ime":"Kris", "Prezime":"Meeke"
+            }
+        ]
+    },
+    {
+        "Model":"Lancer Evolution WRC",
+        "Proizvođač":"Mitsubishi",
+        "Veličina motora u l":2.00,
+        "Broj brzina":5,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1230,
+        "Duljina u mm":4360,
+        "Širina u mm":1800,
+        "Razmak između kotača u mm":2600,
+        "Broj pobjeda":2,
+        "Vozači":[
+            {
+                "Ime":"Tommi", "Prezime":"Makinen"
+            },
+            {
+                "Ime":"Alister", "Prezime":"McRae" 
+            }
+        ]
+    },
+    {
+        "Model":"307 WRC",
+        "Proizvođač":"Peugeot",
+        "Veličina motora u l":1.99,
+        "Broj brzina":5,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1230,
+        "Duljina u mm":4344,
+        "Širina u mm":1770,
+        "Razmak između kotača u mm":2610,
+        "Broj pobjeda":3,
+        "Vozači":[
+            {
+                "Ime":"Nicolas", "Prezime":"Bernardi"
+            },
+            {
+                "Ime":"Daniel", "Prezime":"Carlsson" 
+            }
+        ]
+    },
+    {
+        "Model":"Cordoba WRC",
+        "Proizvođač":"Seat",
+        "Veličina motora u l":1.99,
+        "Broj brzina":6,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1230,
+        "Duljina u mm":4172,
+        "Širina u mm":1770,
+        "Razmak između kotača u mm":2443,
+        "Broj pobjeda":0,
+        "Vozači":[
+            {
+                "Ime":"Didier", "Prezime":"Auriol"
+            },
+            {
+                "Ime":"Gwyndaf", "Prezime":"Evans" 
+            }
+        ]
+    },
+    {
+        "Model":"Fabia WRC",
+        "Proizvođač":"Škoda",
+        "Veličina motora u l":1.98,
+        "Broj brzina":6,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1230,
+        "Duljina u mm":4002,
+        "Širina u mm":1770,
+        "Razmak između kotača u mm":2462,
+        "Broj pobjeda":0,
+        "Vozači":[
+            {
+                "Ime":"Didier", "Prezime":"Auriol"
+            },
+            {
+                "Ime":"Alexandre", "Prezime":"Bengue" 
+            },
+            {
+                "Ime":"Kenneth", "Prezime":"Eriksson"
+            }
+        ]
+    },
+    {
+        "Model":"Impreza WRC",
+        "Proizvođač":"Subaru",
+        "Veličina motora u l":1.99,
+        "Broj brzina":6,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1230,
+        "Duljina u mm":4340,
+        "Širina u mm":1770,
+        "Razmak između kotača u mm":2635,
+        "Broj pobjeda":46,
+        "Vozači":[
+            {
+                "Ime":"Toshiro", "Prezime":"Arai"
+            },
+            {
+                "Ime":"Chris", "Prezime":"Atkinson" 
+            },
+            {
+                "Ime":"Kenneth", "Prezime":"Eriksson"
+            },
+            {
+                "Ime":"Tommi", "Prezime":"Makinen"
+            }
+        ]
+    },
+    {
+        "Model":"SX4 WRC",
+        "Proizvođač":"Suzuki",
+        "Veličina motora u l":1.99,
+        "Broj brzina":5,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1230,
+        "Duljina u mm":4135,
+        "Širina u mm":1770,
+        "Razmak između kotača u mm":2550,
+        "Broj pobjeda":0,
+        "Vozači":[
+            {
+                "Ime":"Per-Gunnar", "Prezime":"Andersson"
+            },
+            {
+                "Ime":"Nicolas", "Prezime":"Bernardi" 
+            }
+        ]
+    },
+    {
+        "Model":"Yaris WRC",
+        "Proizvođač":"Toyota",
+        "Veličina motora u l":1.60,
+        "Broj brzina":6,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1190,
+        "Duljina u mm":4085,
+        "Širina u mm":1875,
+        "Razmak između kotača u mm":2511,
+        "Broj pobjeda":25,
+        "Vozači":[
+            {
+                "Ime":"Ott", "Prezime":"Tanak"
+            },
+            {
+                "Ime":"Jari-Matti", "Prezime":"Latvala" 
+            },
+            {
+                "Ime":"Elfyn", "Prezime":"Evans"
+            },
+            {
+                "Ime":"Sebastien", "Prezime":"Ogier"
+            }
+        ]
+    },
+    {
+        "Model":"Polo R WRC",
+        "Proizvođač":"Volkswagen",
+        "Veličina motora u l":1.60,
+        "Broj brzina":6,
+        "Vrsta pogona":"sva četiri",
+        "Težina u kg":1200,
+        "Duljina u mm":3976,
+        "Širina u mm":1820,
+        "Razmak između kotača u mm":2480,
+        "Broj pobjeda":43,
+        "Vozači":[
+            {
+                "Ime":"Julien", "Prezime":"Ingrassia"
+            },
+            {
+                "Ime":"Sebastien", "Prezime":"Ogier" 
+            },
+            {
+                "Ime":"Jari-Matti", "Prezime":"Latvala"
+            },
+            {
+                "Ime":"Andreas", "Prezime":"Mikkelsen"
+            }
+        ]
+    }
+    
+]
