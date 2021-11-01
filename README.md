@@ -1,5 +1,6 @@
-# OR-labosi
+# OR - Laboratorijske vježbe
 Skup podataka se sastoji od automobila, i njihovih karakteristika, koji su se natjecali u World Rally Championship natjecanju. Neke od navedenih karakteristika su veličina motora, dimenzije automobila, vrsta pogona, postignuća i slično. Također, za svaki automobil su navedeni i najznačajniji vozači koji su se utrkivali u tom automobilu.  
+</br>
 Licencija: Creative Commons BY-SA - Imenovanje, dijeli pod istim uvjetima  
 Autor: Mihael Cugovčan  
 Broj verzije: 1.0    
