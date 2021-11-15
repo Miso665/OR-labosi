@@ -1,0 +1,231 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/Miso665/OR-labosi/blob/main/wrc.json",
+    "type": "array",
+    "title": "WRC automobili",
+    "description": "Skup WRC automobila za otvoreno računarstvo.",
+    "examples": [{
+            "Model": "C3 WRC",
+            "Proizvođač": "Citroen",
+            "Veličina motora u l": 1.6,
+            "Broj brzina": 6,
+            "Vrsta pogona": "sva četiri",
+            "Težina u kg": 1190,
+            "Duljina u mm": 4128,
+            "Širina u mm": 1875,
+            "Razmak između kotača u mm": 2540,
+            "Broj pobjeda": 6,
+            "Vozači": [{
+                    "Ime": "Sebastien",
+                    "Prezime": "Loeb"
+                },
+                {
+                    "Ime": "Kris",
+                    "Prezime": "Meeke"
+                }
+            ]
+        },
+        {
+            "Model": "Fiesta WRC",
+            "Proizvođač": "Ford",
+            "Veličina motora u l": 1.59,
+            "Broj brzina": 6,
+            "Vrsta pogona": "sva četiri",
+            "Težina u kg": 1190,
+            "Duljina u mm": 4130,
+            "Širina u mm": 1875,
+            "Razmak između kotača u mm": 2493,
+            "Broj pobjeda": 9,
+            "Vozači": [{
+                    "Ime": "Sebastien",
+                    "Prezime": "Ogier"
+                },
+                {
+                    "Ime": "Ott",
+                    "Prezime": "Tanak"
+                },
+                {
+                    "Ime": "Elfyn",
+                    "Prezime": "Evans"
+                }
+            ]
+        }
+
+    ],
+    "additionalItems": true,
+    "items": {
+        "anyOf": [{
+            "type": "object",
+            "title": "Automobil",
+            "description": "Objekt koji sadrži podatke o jednom automobili koji se natječe u WRC-u.",
+            "examples": [{
+                "Model": "C3 WRC",
+                "Proizvođač": "Citroen",
+                "Veličina motora u l": 1.6,
+                "Broj brzina": 6,
+                "Vrsta pogona": "sva četiri",
+                "Težina u kg": 1190,
+                "Duljina u mm": 4128,
+                "Širina u mm": 1875,
+                "Razmak između kotača u mm": 2540,
+                "Broj pobjeda": 6,
+                "Vozači": [{
+                        "Ime": "Sebastien",
+                        "Prezime": "Loeb"
+                    },
+                    {
+                        "Ime": "Kris",
+                        "Prezime": "Meeke"
+                    }
+                ]
+            }],
+            "required": [
+                "Model",
+                "Proizvođač",
+                "Veličina motora u l",
+                "Broj brzina",
+                "Vrsta pogona",
+                "Težina u kg",
+                "Duljina u mm",
+                "Širina u mm",
+                "Razmak između kotača u mm",
+                "Broj pobjeda",
+                "Vozači"
+            ],
+            "properties": {
+                "Model": {
+                    "type": "string",
+                    "title": "Model",
+                    "description": "Model automobila.",
+                    "examples": [
+                        "C3 WRC"
+                    ]
+                },
+                "Proizvođač": {
+                    "type": "string",
+                    "title": "Proizvođač",
+                    "description": "Proizvođač automobila.",
+                    "examples": [
+                        "Citroen"
+                    ]
+                },
+                "Veličina motora u l": {
+                    "type": "number",
+                    "title": "Veličina motora u l",
+                    "description": "Veličina motora automobila u litrama.",
+                    "examples": [
+                        1.6
+                    ]
+                },
+                "Broj brzina": {
+                    "type": "integer",
+                    "title": "Broj brzina",
+                    "description": "Broj brzina na automobilu.",
+                    "examples": [
+                        6
+                    ]
+                },
+                "Vrsta pogona": {
+                    "type": "string",
+                    "title": "Vrsta pogona",
+                    "description": "Vrsta pogona automobila.",
+                    "examples": [
+                        "sva četiri"
+                    ]
+                },
+                "Težina u kg": {
+                    "type": "integer",
+                    "title": "Težina u kg",
+                    "description": "Težina automobila u kilogramima.",
+                    "examples": [
+                        1190
+                    ]
+                },
+                "Duljina u mm": {
+                    "type": "integer",
+                    "title": "Duljina u mm",
+                    "description": "Duljina automobila u milimetrima.",
+                    "examples": [
+                        4128
+                    ]
+                },
+                "Širina u mm": {
+                    "type": "integer",
+                    "title": "Širina u mm",
+                    "description": "Širina automobila u milimetrima.",
+                    "examples": [
+                        1875
+                    ]
+                },
+                "Razmak između kotača u mm": {
+                    "type": "integer",
+                    "title": "Razmak između kotača u mm",
+                    "description": "Razmak između prednjih i stražnjih kotača automobila u milimetrima.",
+                    "examples": [
+                        2540
+                    ]
+                },
+                "Broj pobjeda": {
+                    "type": "integer",
+                    "title": "Broj pobjeda",
+                    "description": "Broj pobjeda koje je automobil ostvario.",
+                    "inclusiveMinimum": 0,
+                    "examples": [
+                        6
+                    ]
+                },
+                "Vozači": {
+                    "type": "array",
+                    "title": "Vozači",
+                    "description": "Lista vozača koji su vozili automobil u WRC-u.",
+                    "examples": [{
+                            "Ime": "Sebastien",
+                            "Prezime": "Loeb"
+                        },
+                        {
+                            "Ime": "Kris",
+                            "Prezime": "Meeke"
+                        }
+
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "anyOf": [{
+                            "type": "object",
+                            "title": "Podaci",
+                            "description": "Objekt koji sadrži podatke o imenu i prezimenu pojedinog vozača.",
+                            "examples": [{
+                                "Ime": "Sebastien",
+                                "Prezime": "Loeb"
+                            }],
+                            "required": [
+                                "Ime",
+                                "Prezime"
+                            ],
+                            "properties": {
+                                "Ime": {
+                                    "type": "string",
+                                    "title": "Ime",
+                                    "description": "Ime vozača WRC-a.",
+                                    "examples": [
+                                        "Sebastien"
+                                    ]
+                                },
+                                "Prezime": {
+                                    "type": "string",
+                                    "title": "Prezime",
+                                    "description": "Prezime vozača WRC-a.",
+                                    "examples": [
+                                        "Loeb"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        }]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }]
+    }
+}
