@@ -1,0 +1,17 @@
+{
+  "name": "or-webstranicafinal",
+  "version": "1.0.0",
+  "description": "OR drugi labos",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "Mihael",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "pg": "^8.7.1"
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body class="centered">
+    <div class="header">
+        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif">Skup podataka</h1>
+        <div>
+            <form method="get" action="/" class="centered">
+                <button type="submit" class="button">Povratak</button>
+            </form>
+        </div>
+
+    </div>
+    <br>
+    <label for="filter" style="font-family:Arial">Odaberite polja za pretragu:</label>
+    <select name="filter" id="filter" onchange="filterFunckija()">
+        <option value="sve">Sva polja</option>
+        <option value="model">Model</option>
+        <option value="proizvodac">Proizvođač</option>
+        <option value="ime">Ime vozača</option>
+        <option value="prezime">Prezime vozača</option>
+    </select>
+    <input type="text" class="searchbar" id="svaInput" onkeyup="svaPolja()" placeholder="Pretraga po svim poljima...">
+    <!--<input type="text" class="searchbar" id="proizvodacInput" onkeyup="poProizvodacu()"
+        placeholder="Pretraga po proizvođaču...">-->
+    <br>
+    <button id="json-button" class="download-button">Preuzmi JSON</button>
+    <button id="csv-button" class="download-button">Preuzmi CSV</button>
+    <br>
+    <table class="styled-table centered" style="text-align: center;" id="myTable">
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Proizvođac</th>
+                <th>Veličina motora</th>
+                <th>Broj brzina</th>
+                <th>Vrsta pogona</th>
+                <th>Težina</th>
+                <th>Duljina</th>
+                <th>Širina</th>
+                <th>Razmak između kotača</th>
+                <th>Broj pobjeda</th>
+                <th>Ime vozača</th>
+                <th>Prezime vozača</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let red of podaci) { %>
+                <tr>
+                    <td><%= red.model %></td>
+                    <td><%= red.proizvodac %></td>
+                    <td><%= red.velicina_motora_l %></td>
+                    <td><%= red.broj_brzina %></td>
+                    <td><%= red.vrsta_pogona %></td>
+                    <td><%= red.tezina_kg %></td>
+                    <td><%= red.duljina_mm %></td>
+                    <td><%= red.sirina_mm %></td>
+                    <td><%= red.razmak_izmedu_kotaca_mm %></td>
+                    <td><%= red.broj_pobjeda %></td>
+                    <td><%= red.ime_vozaca %></td>
+                    <td><%= red.prezime_vozaca %></td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+    </br>
+
+    <div class="footer footer-table">
+        <p style="font-family: Arial, Helvetica, sans-serif;">Creative Commons BY-SA</p>
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: smaller;">FER 2021</p>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
