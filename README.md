@@ -4,7 +4,7 @@ Napomena: index.html je napravljen kao home.ejs, a datatable.html kao datatable.
 </br>  
 Licencija: Creative Commons BY-SA - Imenovanje, dijeli pod istim uvjetima  
 Autor: Mihael Cugovčan  
-Broj verzije: 1.0    
+Broj verzije: 2.0    
 Jezik: hrvatski i engleski  
 Atributi: model automobila, proizvođač, veličina motora, broj brzina, vrsta pogona, težina u kg, duljina u mm, širina u mm, razmak između kotača u mm, broj pobjeda i vozači  
 Datum izrade: 1.11.2021.  
