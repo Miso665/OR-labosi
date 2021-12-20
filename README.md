@@ -4,11 +4,11 @@ Napomena: index.html je napravljen kao home.ejs, a datatable.html kao datatable.
 </br>  
 Licencija: Creative Commons BY-SA - Imenovanje, dijeli pod istim uvjetima  
 Autor: Mihael Cugovčan  
-Broj verzije: 2.0    
+Broj verzije: 3.0    
 Jezik: hrvatski i engleski  
 Atributi: model automobila, proizvođač, veličina motora, broj brzina, vrsta pogona, težina u kg, duljina u mm, širina u mm, razmak između kotača u mm, broj pobjeda i vozači  
 Datum izrade: 1.11.2021.  
-Datum zadnje izmjene: 15.11.2021.  
+Datum zadnje izmjene: 20.12.2021.  
 Ključne riječi: wrc, reli, automobili, timovi  
 Način zapisa: UTF-8  
 Baza podataka: PostgreSQL  
