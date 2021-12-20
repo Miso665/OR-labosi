@@ -1,0 +1,684 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "info": "WRC automobili",
+        "version": "3.0",
+        "contact": "mc52657@fer.hr",
+        "licence": "CC Zero v1.0 Universal"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "summary": "Podaci o automobilima i njihvoim vozacima",
+                "description": "Dohvat svih podataka o automobilima i njihovim vozacima",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Uspjesan dohvat"
+                    },
+                    "500": {
+                        "description": "Greska sa bazom podataka"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            }
+
+        },
+        "/openapi": {
+            "get": {
+                "summary": "OpenApi dokument",
+                "description": "Dohvat OpenApi specifikacije",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Uspjesan dohvat"
+                    },
+                    "500": {
+                        "description": "Greska na serveru"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            }
+
+        },
+        "/automobili/": {
+            "get": {
+                "summary": "Podaci o automobilima",
+                "description": "Dohvat svih podataka o automobilima",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Uspjesan dohvat"
+                    },
+                    "500": {
+                        "description": "Greska sa bazom podataka"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Dodavanje novog automobila",
+                "description": "Dodavanje novog automobila po prilozenim podacima",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                        "name": "id_auta",
+                        "in": "body",
+                        "description": "ID novog auta",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "model",
+                        "in": "body",
+                        "description": "Model novog auta",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "proizvodac",
+                        "in": "body",
+                        "description": "Proizvodac novog auta",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "velicina_motora_l",
+                        "in": "body",
+                        "description": "Velicina motora novog auta",
+                        "required": true,
+                        "type": "number",
+                        "format": "float"
+                    },
+                    {
+                        "name": "broj_brzina",
+                        "in": "body",
+                        "description": "Broj brzina novog auta",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "vrsta_pogona",
+                        "in": "body",
+                        "description": "Vrsta pogona novog auta",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tezina_kg",
+                        "in": "body",
+                        "description": "Tezina novog auta",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "duljina_mm",
+                        "in": "body",
+                        "description": "Duljina novog auta",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "sirina_mm",
+                        "in": "body",
+                        "description": "Sirina novog auta",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "razmak_izmedu_kotaca_mm",
+                        "in": "body",
+                        "description": "Razmak izmedu kotaca novog auta",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "broj_pobjeda",
+                        "in": "body",
+                        "description": "Broj pobjeda novog auta",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "id_vozaca",
+                        "in": "body",
+                        "description": "ID vozaca novog auta",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Automobil kreiran"
+                    },
+                    "400": {
+                        "description": "Nedostaju podaci o automobilu"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            }
+
+        },
+        "/automobili/{id}": {
+            "get": {
+                "summary": "Podaci o automobilu sa trazenim ID-om",
+                "description": "Dohvat podataka o automobilu sa trazenim ID-om",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "description": "ID zeljenog auta",
+                    "required": true,
+                    "type": "integer",
+                    "format": "int64"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Uspjesan dohvat"
+                    },
+                    "404": {
+                        "description": "Ne postoji automobil sa tim ID-om"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Azuriranje podataka o automobilu",
+                "description": "Azuriranje zeljenih podataka o automobilu sa odredenim ID-om",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID auta",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "model",
+                        "in": "body",
+                        "description": "Model auta",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "proizvodac",
+                        "in": "body",
+                        "description": "Proizvodac auta",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "velicina_motora_l",
+                        "in": "body",
+                        "description": "Velicina motora auta",
+                        "required": false,
+                        "type": "number",
+                        "format": "float"
+                    },
+                    {
+                        "name": "broj_brzina",
+                        "in": "body",
+                        "description": "Broj brzina auta",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "vrsta_pogona",
+                        "in": "body",
+                        "description": "Vrsta pogona auta",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "tezina_kg",
+                        "in": "body",
+                        "description": "Tezina auta",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "duljina_mm",
+                        "in": "body",
+                        "description": "Duljina auta",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "sirina_mm",
+                        "in": "body",
+                        "description": "Sirina auta",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "razmak_izmedu_kotaca_mm",
+                        "in": "body",
+                        "description": "Razmak izmedu kotaca auta",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "broj_pobjeda",
+                        "in": "body",
+                        "description": "Broj pobjeda auta",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "id_vozaca",
+                        "in": "body",
+                        "description": "ID vozaca auta",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Podaci azurirani"
+                    },
+                    "400": {
+                        "description": "Podaci nedostaju ili je ID neispravan"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Brisanje zeljenog automobila",
+                "description": "Brisanje automobila koji ima trazeni id",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "description": "ID auta",
+                    "required": true,
+                    "type": "integer",
+                    "format": "int64"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Automobil izbrisan"
+                    },
+                    "404": {
+                        "description": "Ne postoji automobil sa tim ID-om"
+                    }
+                }
+            }
+
+        },
+        "/automobili/pobjede/{brpobjeda}": {
+            "get": {
+                "summary": "Podaci o automobilima",
+                "description": "Dohvat podataka o automobilima sa odredenim brojem pobjeda",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "brpobjeda",
+                    "in": "path",
+                    "description": "Broj pobjeda",
+                    "required": true,
+                    "type": "integer",
+                    "format": "int64"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Podaci sa trazenim brojem pobjeda"
+                    },
+                    "404": {
+                        "description": "Ne postoje automobili sa trazenim brojem pobjeda"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            }
+
+        },
+        "/vozaci/": {
+            "get": {
+                "summary": "Podaci o svim vozacima",
+                "description": "Dohvat podataka o svim vozacima",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Podaci o svim vozacima"
+                    },
+                    "500": {
+                        "description": "Greska sa bazom podataka"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Dodavanje vozaca",
+                "description": "Dodavanje novog vozaca po prilozenim podacima",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                        "name": "id_vozaca",
+                        "in": "body",
+                        "description": "ID novog vozaca",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "ime_vozaca",
+                        "in": "body",
+                        "description": "Ime novog vozaca",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "prezime_vozaca",
+                        "in": "body",
+                        "description": "Prezime novog vozaca",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Dodan vozac"
+                    },
+                    "400": {
+                        "description": "Nedostaju podaci o vozacu"
+                    }
+
+                }
+            },
+            "put": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            }
+
+        },
+        "/vozaci/{id}": {
+            "get": {
+                "summary": "Podaci o vozacu sa trazenim ID-om",
+                "description": "Dohvat podataka o vozacu sa trazenim ID-om",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "description": "ID zeljenog vozaca",
+                    "required": true,
+                    "type": "integer",
+                    "format": "int64"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Uspjesan dohvat"
+                    },
+                    "404": {
+                        "description": "Ne postoji vozac sa tim ID-om"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Metoda nije implementirana",
+                "description": "Metoda nije implementirana",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Nije implementirano"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Azuriranje podataka o vozacu",
+                "description": "Azuriranje zeljenih podataka o zeljenom vozacu",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID vozaca",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "name": "ime_vozaca",
+                        "in": "body",
+                        "description": "Ime vozaca",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "prezime_vozaca",
+                        "in": "body",
+                        "description": "Prezime vozaca",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Podaci azurirani"
+                    },
+                    "400": {
+                        "description": "Nedostaju podaci o vozacu ili je ID netocan"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Brisanje odabranog vozaca",
+                "description": "Brisanje vozaca po zeljenom ID-u",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "description": "ID vozaca",
+                    "required": true,
+                    "type": "integer",
+                    "format": "int64"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Vozac izbrisan"
+                    },
+                    "404": {
+                        "description": "Ne postoji vozac sa tim ID-om"
+                    }
+                }
+            }
+
+        }
+    }
+}
