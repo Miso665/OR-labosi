@@ -34,7 +34,24 @@ router.get("/:id", async function (req, res, next) {
                                 "message": "Ne postoji automobil sa tim ID-om",
                                 "resposne": null});
         }
-        const rawPodaci = JSON.stringify(resultPodaci);
+        if (resultPodaci) {
+            let contextObjekt = {
+                "@vocab": "https://schema.org/car",
+                "@type": "Car",
+                "broj_brzina":"numberOfForwardGears",
+                "tezina_kg":"weight",
+                "sirina_mm":"width"
+            }
+            let newObj = {
+                "@context":contextObjekt
+            };
+            for(const [key, value] of Object.entries(resultPodaci[0])){
+                newObj[key] = value;
+            }
+            resultPodaci[0]["@context"] = contextObjekt;
+        }
+        
+        const rawPodaci = JSON.stringify(resultPodaci[0]);
         const response = JSON.parse(rawPodaci);
         res.type('application/json');
         res.status(200);

@@ -38,6 +38,7 @@
     background: #1a7bbc;
     color: white;
     font-size: 20px;
+    justify-content: center;
 }
 
 .footer {
@@ -71,6 +72,23 @@
     font-size: 16px;
     padding: 15px 32px;
     text-decoration: none;
+}
+
+.button-center {
+    margin-right: auto;
+    margin-left: 12%;
+}
+
+.button-login {
+    justify-content: block;
+    border: 2px solid #d1d1d1;
+    background-color: #e7e7e7;
+    color: black;
+    font-size: 16px;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin-right:auto;
+    margin-left: auto;
 }
 
 .download-button {
@@ -136,4 +154,15 @@ html {
     font-size: 14px;
     border: 1px solid #ddd;
     padding: 12px 20px 12px 40px;
+}
+
+.profile-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.58);
+    max-width: 100%;
+    margin: auto;
+    color: white;
 }
